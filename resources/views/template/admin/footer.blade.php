@@ -16,6 +16,9 @@
     <script src="/public/admin/assets/js/lib/data-table/buttons.colVis.min.js"></script>
     <script src="/public/admin/assets/js/lib/data-table/datatables-init.js"></script>
 
+    <script src="/public/admin/assets/js/lib/chosen/chosen.jquery.min.js"></script>
+    <script src="/public/admin/assets/js/lib/chosen/chosen.proto.min.js"></script>
+
     <script src="/public/admin/assets/js/lib/chart-js/Chart.bundle.js"></script>
     <script src="/public/admin/assets/js/dashboard.js"></script>
     <script src="/public/admin/assets/js/widgets.js"></script>
@@ -26,7 +29,32 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#bootstrap-data-table-export').DataTable();
+            $('#datatable').DataTable({
+                "language": {
+                    "decimal":        "",
+                    "emptyTable":     "Không có dữ liệu trong bảng",
+                    "info":           "Đang xem _START_ đến _END_ trong tổng số _TOTAL_ mục",
+                    "infoEmpty":      "Đang xem 0 đến 0 trong tổng số 0 mục",
+                    "infoFiltered":   "(được lọc từ _MAX_ mục)",
+                    "infoPostFix":    "",
+                    "thousands":      ",",
+                    "lengthMenu":     "Xem _MENU_ mục",
+                    "loadingRecords": "Loading...",
+                    "processing":     "Đang xử lý...",
+                    "search":         "Tìm kiếm:",
+                    "zeroRecords":    "Không tìm thấy dòng nào phù hợp",
+                    "paginate": {
+                        "first":      "Đầu",
+                        "last":       "Cuối",
+                        "next":       "Tiếp",
+                        "previous":   "Trước"
+                    }
+                    }
+                });
+            $('#typeOfTruck,#payLoad,#price').chosen({
+                width: "100%",
+                no_results_text: "Không có kết quả",
+            });
         } );
     </script>
 
@@ -72,6 +100,24 @@
             modal.find('.modal-body #id_cat').val(id)
         })
     </script>
+    <script>
+        //load ảnh đại diện
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function() {
+            readURL(this);
+        });
+    </script>
+
 
     </body>
 </html>

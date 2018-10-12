@@ -89,5 +89,23 @@ Route::namespace('Admin')->group(function(){
         'uses' => 'ControllerCategory@deleteTypeOfCargo',
         'as' => 'admin.category.typeofcargo.index.delete'
     ]);
+    //typeoftruck
+    Route::post('/category/typeoftruck', [
+        'uses' => 'ControllerCategory@postTypeOfTruck',
+        'as' => 'admin.category.typeoftruck.index'
+    ]);
+    Route::post('/category/typeoftruck/insert', [
+        'uses' => 'ControllerCategory@postTypeOfTruck',
+        'as' => 'admin.category.typeoftruck.index.insert'
+    ]);
+    Route::post('/category/typeoftruck/update', [
+        'uses' => 'ControllerCategory@postTypeOfTruck',
+        'as' => 'admin.category.typeoftruck.index.update'
+    ]);
     //---END
+    //account
+    Route::get('/account', [
+        'uses' => 'ControllerAccount@index',
+        'as' => 'admin.account.index'
+    ]);
 });

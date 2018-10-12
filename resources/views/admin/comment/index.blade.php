@@ -31,14 +31,14 @@
                             <strong class="card-title">Bình luận</strong>
                         </div>
                         <div class="card-body">
-                            <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                            <table id="datatable" class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
                                     <th>Tài khoản</th>
                                     <th>Bình luận</th>
                                     <th>Bài đăng</th>
                                     <th>Thời gian</th>
-                                    <th class="sorting_desc_disabled sorting_asc_disabled">Thuộc tính</th>
+                                    <th class="sorting_desc_disabled sorting_asc_disabled">Trạng thái</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -47,7 +47,7 @@
                                     <td>System Architect</td>
                                     <td>Edinburgh</td>
                                     <td>24/09/2018 9:51</td>
-                                    <td align="center"><a><img src="/admin/templates/admin/images/status/ac.png"></a></td>
+                                    <td align="center"><a><img src="/public/admin/images/status/ac.png"></a></td>
                                 </tr>
                                 </tbody>
                             </table>

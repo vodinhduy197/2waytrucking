@@ -30,7 +30,7 @@
                             <strong class="card-title">Công ty đối tác</strong>
                         </div>
                         <div class="card-body">
-                            <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                            <table id="datatable" class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
                                     <th>Tên công ty</th>

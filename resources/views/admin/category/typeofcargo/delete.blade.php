@@ -16,7 +16,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
-                    <button type="submit" class="btn btn-success">Xóa</button>
+                    <button type="submit" class="btn btn-danger">Xóa</button>
                 </div>
             </form>
             </div>

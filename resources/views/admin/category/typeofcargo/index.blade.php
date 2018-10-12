@@ -47,7 +47,7 @@
                             <button type="button" class="border rounded border-success btn btn-success btn-sm" data-toggle="modal" data-target="#insert_type_of_cargo"><i class="menu-icon fa fa-plus-circle"></i> Thêm loại hàng</button>
                         </div>
                         <div class="card-body">
-                            <table id="bootstrap-data-table" class="table table-striped table-bordered table-hover">
+                            <table id="datatable" class="table table-striped table-bordered table-hover">
                                 <thead>
                                 <tr>
                                     <th>Tên loại hàng</th>

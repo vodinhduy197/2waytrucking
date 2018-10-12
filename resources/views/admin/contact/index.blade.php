@@ -30,7 +30,7 @@
                             <strong class="card-title">Liên hệ</strong>
                         </div>
                         <div class="card-body">
-                            <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                            <table id="datatable" class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
                                     <th>Họ tên</th>

@@ -30,7 +30,7 @@
                             <strong class="card-title">Lịch sử giao dịch(tên công ty ở đây)</strong>
                         </div>
                         <div class="card-body">
-                            <table id="bootstrap-data-table" class="table table-striped table-bordered table-hover">
+                            <table id="datatable" class="table table-striped table-bordered table-hover">
                                 <thead>
                                 <tr>
                                     <th>Tên chủ hàng</th>

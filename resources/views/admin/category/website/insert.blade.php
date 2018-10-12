@@ -16,7 +16,7 @@
                                 <input type="text" id="category_name" class="form-control" placeholder="Nhập vào tên danh mục">
 
                                 <label for="danh mục cha">Danh mục cha </label>
-                                <select type="text" id="position_name" class="form-control" >
+                                <select id="position_name" class="form-control" >
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
